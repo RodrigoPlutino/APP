@@ -26,6 +26,7 @@ function ItemDetailSkeleton(props) {
                 counter,
                 props.props.id,
                 props.props.thumbnail,
+                props.props.price * counter
               )
         }else{
             order[checkIndex].cantidad = order[checkIndex].cantidad + counter 

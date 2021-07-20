@@ -13,7 +13,7 @@ export function CartContext({ children }) {
       precio: price,
       cantidad: cantidad,
       image: image,
-      total : total,
+      total : total
       
     };
     let temp = [...order];

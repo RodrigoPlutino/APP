@@ -11,7 +11,7 @@ function NavBar(props) {
   }
 
 const ocultar= {
-  color: order <=0 ? '#231E23': '#FFFFFF'
+  color: order <=0 ? '#FFFFFF': '#000000'
 }
 
 //const color = {
