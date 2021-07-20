@@ -10,6 +10,7 @@ import image from "../assets/carro.png";
 import { CartContext } from "../components/CartContext";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ItemDetailContainer from "../components/ItemDetailContainer";
+import Footer from "../components/Footer";
 
 function AppRouters() {
   return (
@@ -27,7 +28,7 @@ function AppRouters() {
 
           <Route path="*"> Page not found, please click in Home</Route>
         </Switch>
-        
+        <Footer/>
       </Router>
       </CartContext>
     
