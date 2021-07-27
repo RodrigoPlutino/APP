@@ -5,20 +5,52 @@ import "../styles/styles.css";
 
 function Footer() {
     return (
-        <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">Company Name © 2018</p>
+      <>
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>E-Commerce</h3>
+
+            <p class="footer-links">
+              <a href="/">Inicio</a>·
+              <a href="/Products">Productos</a>
+            </p>
+
+            <p class="footer-company-name">Rodrigo Plutino - 2021</p>
+          </div>
+
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>
+                <span>Rodrigo Plutino</span> Lanus, Buenos Aires - Argentina
+              </p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>11 7367 5464</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:rodrigoplutino@gmail.com">
+                  rodrigoplutino@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>Sobre la página</span>
+              Proyecto realizado de forma individual, en el trayecto de un mes,
+              para ser entregado a modo de trabajo final en CODERHAUSE.
+            </p>
+          </div>
         </footer>
-    </div>
-    )
+      </>
+    );
 }
 
 export default Footer

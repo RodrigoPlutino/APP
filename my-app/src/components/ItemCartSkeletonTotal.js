@@ -32,7 +32,7 @@ function ItemCartSkeletonTotal(props) {
 
   return (
     <div id={props.id} class="card">
-    <img class="card-img-top col-4" src="{props.image}" alt="Imagen carrito"></img>
+    <img class="card-img-top col-4" src="https://i.pinimg.com/474x/93/b5/f9/93b5f9913d2e4316cd6e541c67b9aed0.jpg" alt="Imagen carrito"></img>
     <div class="card-body col.8">
       <h5 class="card-title">TOTAL</h5>
       <h4 class="card-text">{currency_price}</h4>

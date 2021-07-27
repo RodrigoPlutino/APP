@@ -37,9 +37,7 @@ header{
     
 }
 
-@media (max-width: 768px){
-    .header{
-        
-    }
-
+.nav-img {
+    height: 50% !important;
+    width: 50% !important;
 }

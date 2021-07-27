@@ -30,7 +30,7 @@
     margin: 80px;
     align-items: center;
     grid-column-gap: 30px;
-    font-family: 'Playfair Display', serif;
+    font-family: sans-serif;
 }
 
 .card article{
@@ -73,8 +73,11 @@
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-}button:hover{
-    background-color: #FBE3E3;
+    margin: 10px !important;
+}
+
+button:hover{
+    background-color: #4b4b4bc9;
 }
 
 

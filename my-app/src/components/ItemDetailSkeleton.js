@@ -64,8 +64,8 @@ function ItemDetailSkeleton(props) {
                 <div class="photo-container">
                   <div class="photo-main">
                     <div class="controls">
-                      <i class="material-icons">share</i>
-                      <i class="material-icons">favorite_border</i>
+                      <i class="material-icons">Compartir</i>
+                      <i class="material-icons">FAV</i>
                     </div>
                     <img src={props.props.thumbnail} alt="imagen"></img>
                   </div>
@@ -74,11 +74,12 @@ function ItemDetailSkeleton(props) {
               <div class="product__info">
                 <div class="title">
                   <h1>{props.props.title}</h1>
-                  <span>ID {props.props.id}</span>
+                  <span>ID: {props.props.id}</span>
                 </div>
                 <div class="price">
-                   <span>{currency_price}</span>
+                   <h3>{currency_price}</h3>
                 </div>
+                <hr/>
                 <div class="variant">
                   <h3>Cantidad</h3>
                   <ItemCounter suma={handelInc} resta={handelDec} contador={counter}/>
@@ -95,11 +96,14 @@ function ItemDetailSkeleton(props) {
                 <button class="buy--btn" onClick={addItem}>Añadir al carrito</button>
               </div>
             </section>
-            <Link hidden={hiddenButton == false} to="/Products"><button class="buy--btn">Seguir Comprando</button></Link>
-            <Link hidden={hiddenButton == false} to="/carrito"><button class="buy--btn">Finalizar compra</button></Link>
+            <section>
+              <Link hidden={hiddenButton == false} to="/Products"><button class="buy--btn">Seguir Comprando</button></Link>
+              <Link hidden={hiddenButton == false} to="/carrito"><button class="buy--btn">Finalizar compra</button></Link>
+            </section>
           </div>
+            
       ) : (
-        <h2> no hay nada que mostrar </h2>
+        <h2> No hay nada que mostrar </h2>
       )}
     </div>
   );

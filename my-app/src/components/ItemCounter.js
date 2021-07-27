@@ -1,5 +1,5 @@
 import React from 'react'
-import '../components/DetailContainer.css'
+import '../styles/DetailContainer.css'
 //import {Link} from 'react-router-dom'
 
 function ItemCounter(props) {
