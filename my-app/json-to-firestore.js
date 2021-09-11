@@ -4,9 +4,9 @@ require("firebase/firestore");
 
 // Initialize Cloud Firestore through Firebase
 firebase.initializeApp({
-    apiKey: "AIzaSyDn8_RSJGxVk6bWHzbsQxbiHAGBN3H6oPM",
-    authDomain: "app-react-b5f2c.firebaseapp.com",
-    projectId: "app-react-b5f2c"
+  apiKey: "AIzaSyCV90o4JriFrTLbs9jXgB-oD0_plvYvqcQ",
+  authDomain: "appreactv3.firebaseapp.com",
+  projectId: "appreactv3"
   });
   
 var db = firebase.firestore();
@@ -551,12 +551,19 @@ var menu =[
      ]
 
 menu.forEach(function(obj) {
-    db.collection("products").add({
+    db.collection("shop-products").add({
         id: obj.id,
+        category_id: obj.category_id,
         title: obj.title,
+        condition: obj.condition,
+        thumbnail: obj.thumbnail,
         available_quantity: obj.available_quantity,
+        sold_quantity: obj.sold_quantity,
         price: obj.price,
-        thumbnail: obj.thumbnail
+        original_price: obj.original_price,
+        currency_id: obj.currency_id,
+        accepts_mercadopago: obj.accepts_mercadopago,
+        domain_id: obj.domain_id
     }).then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
     })

@@ -1,16 +1,49 @@
 import React from 'react'
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"></link>;
-
+import Carousel from 'react-bootstrap/Carousel'
 
 function HomeCarrousel() {
     return (
-      <div id="carouselExampleSlidesOnly" class="carousel container">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <a href="/Products"><img src="https://cl.buscafs.com/www.levelup.com/public/uploads/images/646158/646158.jpg" class="d-block w-100" alt="..."></img></a>
-    </div>
-  </div>
-</div>
+      <>
+        <Carousel fade className='carousel-home' id='carousel-home'>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://cdn.shopify.com/s/files/1/0564/0830/9941/files/FPO_NOR_5796_HOME_StoryBanner_1920x.jpg?v=1620397495"
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://vendor.webuildthemes.com/assets/images/background-2.jpg"
+              alt="Second slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="https://vendor.webuildthemes.com/assets/images/background-1.jpg"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+      </>
 
       
     );

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ItemListSkeleton from "./ItemListSkeleton";
+import ItemListSkeletonV2 from "./ItemListSkeletonV2";
 import "../styles/styles.css";
 import {getFirestore} from '../Firebase/Firebase'
 import db from '../Firebase/Firebase'
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"></link>;
 
 
-function ItemList() {
+function ItemListV2() {
 
   const [products, setProducts] = useState([]);
   const [load, setLoad] = useState(false);
@@ -45,10 +47,10 @@ function ItemList() {
 
 
   return (
-    <div className="col-12 col-md-8 item-list-products-column">
+    <div className="products-section-box">
       {
         products.map((products, index)=>{return(
-          <ItemListSkeleton 
+          <ItemListSkeletonV2 
           key={index} 
           id={products.id}
           image={products.thumbnail} 
@@ -62,4 +64,4 @@ function ItemList() {
   );
 }
 
-export default ItemList;
+export default ItemListV2;

@@ -12,7 +12,7 @@ function ItemDetail() {
   let {product_id} = useParams()
 
   const db = getFirestore();
-  const itemCollection = db.collection("products");
+  const itemCollection = db.collection("shop-products");
   const itemId = itemCollection.where('id','==',product_id)
 
 //  useEffect(()=>{

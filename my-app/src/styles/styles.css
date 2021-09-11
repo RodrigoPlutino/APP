@@ -43,32 +43,6 @@ body {
 
 
 
-/* ITEMLIST CARD */
-
-.card {
-    display: flex !important;
-    flex-direction: row !important;
-    height: 200px;
-    margin: -0.5px !important;
-    border-radius: 4px 4px 0 0 !important; 
-    border: 0.5px solid rgba(0,0,0,.125);
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.card-img-top {
-    width: 80%;
-    height: 80%;
-}
-
-.card-title {
-    text-align: left !important;
-}
-
 @media (max-width: 768px){
     .card{
         grid-column-gap: 0px !important;

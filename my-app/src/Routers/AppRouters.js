@@ -5,7 +5,6 @@ import About from "../Pages/About";
 import Products from "../Pages/Products";
 import Carrito from "../Pages/Carrito";
 import NavBar from "../components/NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../assets/carro.png";
 import { CartContext } from "../components/CartContext";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";

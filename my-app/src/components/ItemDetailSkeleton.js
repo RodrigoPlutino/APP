@@ -11,11 +11,12 @@ import "../styles/detail_styles.css";
 
 
 function ItemDetailSkeleton(props) {
+
+  
     const [hiddenButton, setHiddenButton] = useState(false);
     const [counter, setCounter] = useState(1);
     const order = useContext(orderContext);
     const {insertOrder} = useContext(orderUpdateContext);
-
     function addItem (){
         setHiddenButton(prevhHiddenButton => !prevhHiddenButton);
         const checkIndex = order.findIndex((element)=>element.id === props.props.id);
